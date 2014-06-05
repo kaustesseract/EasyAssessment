@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+    
+    <TextView
+        android:id="@+id/aCriteriaName" 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:background="@drawable/slider_background">
+    
+	    <SeekBar 
+	        android:id="@+id/aCriteriaSeekBar" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:thumb="@drawable/slider_knob"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:progressDrawable="@drawable/slider_track" 
+	        android:minHeight="13dp"
+	        android:maxHeight="13dp" />
+    
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/aCriteriaValue" 
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:gravity="right" />
+    
+</LinearLayout>

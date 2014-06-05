@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainScreen" 
+    android:background="@drawable/background">
+
+    <include layout="@layout/titlebar" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+    
+	    <Button
+	        android:id="@+id/setUpBtn"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/btn_set_up" />
+	    
+	    <Button
+	        android:id="@+id/assessmentsBtn"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_assessments" />
+	    
+	    <Button
+	        android:id="@+id/sendResultsBtn"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_send_results" />
+	    
+	    <Button
+	        android:id="@+id/helpAndSupportBtn"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_help_and_support" />
+    
+    </LinearLayout>
+    
+    <include layout="@layout/bottombar" />
+
+</LinearLayout>

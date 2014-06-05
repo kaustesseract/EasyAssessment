@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thepegeekapps.easyassessment"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        
+        <activity android:name=".screen.SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".screen.MainScreen" android:label="@string/app_name" android:screenOrientation="portrait" />
+		<activity android:name=".screen.SetupScreen" android:label="@string/set_up" android:screenOrientation="portrait" />        
+		<activity android:name=".screen.GroupsScreen" android:label="@string/groups" android:screenOrientation="portrait" />
+		<activity android:name=".screen.StudentsScreen" android:label="@string/students" android:screenOrientation="portrait" />
+		<activity android:name=".screen.RubricsScreen" android:label="@string/rubrics" android:screenOrientation="portrait" />
+		<activity android:name=".screen.CriteriasScreen" android:label="@string/criterias" android:screenOrientation="portrait" />
+		<activity android:name=".screen.SelectGroupScreen" android:label="@string/select_group" android:screenOrientation="portrait" />
+		<activity android:name=".screen.AssessmentsScreen" android:label="@string/assessments" android:screenOrientation="portrait" />
+		<activity android:name=".screen.SelectStudentsScreen" android:label="@string/select_students" android:screenOrientation="portrait" />
+		<activity android:name=".screen.SelectRubricScreen" android:label="@string/select_rubric" android:screenOrientation="portrait" />
+		<activity android:name=".screen.AssessmentScreen" android:label="@string/assessment" android:screenOrientation="portrait" />
+		<activity android:name=".screen.NotesScreen" android:label="@string/notes" android:screenOrientation="portrait" />
+		<activity android:name=".screen.InfoScreen" android:label="@string/help_and_support" android:screenOrientation="portrait" />
+		<activity android:name=".screen.SelectAssessmentsScreen" android:label="@string/assessments" android:screenOrientation="portrait" />
+		<activity android:name=".screen.DropboxScreen" android:label="@string/my_dropbox" android:screenOrientation="portrait" />
+		<activity android:name=".screen.StudentAssessmentsScreen" android:label="@string/student_name" android:screenOrientation="portrait" />
+		
+		<activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboard">
+	      	<intent-filter>
+		        <data android:scheme="db-80b6mzr2ltk2jrb" />
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.BROWSABLE"/>
+		        <category android:name="android.intent.category.DEFAULT" />
+	      	</intent-filter>
+	    </activity>
+        
+    </application>
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="3dp"
+    android:background="@drawable/bottombar_bg">
+    
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/btn_back"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:text="@string/back" />
+    
+    <View style="@style/HorizontalFiller" />
+    
+    <Button
+        android:id="@+id/addNewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/btn_normal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:text="@string/add_new" />
+    
+    <View style="@style/HorizontalFiller" />
+    
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/btn_next"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:text="@string/next" />
+
+</LinearLayout>
